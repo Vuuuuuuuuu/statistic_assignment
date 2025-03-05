@@ -27,7 +27,7 @@ else:
 ```
 
 ### 2 Percentiles and Quartiles:
-```
+``` python
 x=sorted(y)
 Q1= x[int(len(y)*0.25)]
 print("Q1", Q1)
