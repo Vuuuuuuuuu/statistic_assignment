@@ -23,6 +23,7 @@ if max_frequency == 1:
     print("no mode")  
 else:
     print("mode", mode)
+```
 #2 Percentiles and Quartiles:
 x=sorted(y)
 Q1= x[int(len(y)*0.25)]
