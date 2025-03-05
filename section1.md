@@ -1,4 +1,4 @@
-### statistics answers
+
 ```python
 y= [12, 15, 14, 10, 18, 20, 22, 24, 17, 19]
 #1  Measures of Central Tendency: 
@@ -10,7 +10,7 @@ if len(y)%2==0:
 else:
   median = y[len]
 print("median= ",median)
-```
+
 mode={}
 
 for num in y:
@@ -25,7 +25,7 @@ if max_frequency == 1:
     print("no mode")  
 else:
     print("mode", mode)
-```
+
 #2 Percentiles and Quartiles:
 x=sorted(y)
 Q1= x[int(len(y)*0.25)]
