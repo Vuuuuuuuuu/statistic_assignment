@@ -38,17 +38,17 @@ print("Q3",Q3)
 ```
 
 ### 3. Interquartile Range (IQR):
-```
+```python
 IQR= x[int(len(y)*0.75)]-x[int(len(y)*0.25)]
 print("IQR",IQR)
 ```
 ### 4. Min and Max: 
-```
+```python
 print("min",min(y))
 print("max",max(y))
 ```
 ### 5. Finding Outliers Using Quartiles: 
-```
+```python
 LB= Q1-1.5*IQR
 UB= Q3+1.5*IQR
 
@@ -64,7 +64,7 @@ else:
   print("no upper outlier")
 ```
 ### 6.Measures of Dispersion:
-```
+```python
 range= max(y)-min(y)
 print("range",range)
 yv=[]
@@ -78,7 +78,7 @@ std= var**0.5
 print("std",std)
 ```
 ### 7. Z-score Standardization:
-```
+```python
 i=0 
 zscore=[]
 while i<10:
@@ -88,7 +88,7 @@ print("zscore",zscore)
 ```
 
 ### 9.scatterplot
-```
+```python
 import matplotlib.pyplot as plt
 
 a = [10, 20, 30, 40, 50]
