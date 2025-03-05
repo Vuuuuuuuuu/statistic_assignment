@@ -1,7 +1,6 @@
-
+### 1.Measures of Central Tendency: 
 ```python
-y= [12, 15, 14, 10, 18, 20, 22, 24, 17, 19]
-#1  Measures of Central Tendency: 
+y= [12, 15, 14, 10, 18, 20, 22, 24, 17, 19] 
 mean= sum(y)/len(y)
 n= len(y)
 print("mean= ",mean)
@@ -25,8 +24,10 @@ if max_frequency == 1:
     print("no mode")  
 else:
     print("mode", mode)
+```
 
-#2 Percentiles and Quartiles:
+### 2 Percentiles and Quartiles:
+```
 x=sorted(y)
 Q1= x[int(len(y)*0.25)]
 print("Q1", Q1)
@@ -34,13 +35,20 @@ Q2=x[int(len(y)*0.5)]
 print("Q2", Q2)
 Q3= x[int(len(y)*0.75)]
 print("Q3",Q3)
-#3. Interquartile Range (IQR):
+```
+
+### 3. Interquartile Range (IQR):
+```
 IQR= x[int(len(y)*0.75)]-x[int(len(y)*0.25)]
 print("IQR",IQR)
-#4. Min and Max: 
+```
+### 4. Min and Max: 
+```
 print("min",min(y))
 print("max",max(y))
-#5. Finding Outliers Using Quartiles: 
+```
+### 5. Finding Outliers Using Quartiles: 
+```
 LB= Q1-1.5*IQR
 UB= Q3+1.5*IQR
 
@@ -54,8 +62,9 @@ if x[len(x)-1]> UB:
   print("upper outlier", x[len(x)])
 else:
   print("no upper outlier")
-
-#Measures of Dispersion:
+```
+### 6.Measures of Dispersion:
+```
 range= max(y)-min(y)
 print("range",range)
 yv=[]
@@ -67,15 +76,19 @@ var= sum(yv)/(len(y)-1)
 print("var",var)
 std= var**0.5
 print("std",std)
-#7. Z-score Standardization:
+```
+### 7. Z-score Standardization:
+```
 i=0 
 zscore=[]
 while i<10:
   zscore.append((y[i]-mean)/std)
   i+=1
 print("zscore",zscore)
+```
 
-#scatterplot
+### 9.scatterplot
+```
 import matplotlib.pyplot as plt
 
 a = [10, 20, 30, 40, 50]
